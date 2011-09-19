@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ridemo</title>
-  <%= stylesheet_link_tag    :all %>
+  <title>A.C.C.I. Cable</title>
+  <%= stylesheet_link_tag "application"  %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<img src="/images/ACCIletterheadsm.gif" />
+<table>
+    <tr>
+      <td>
+            <%= yield :sidebar %>
+      </td>
+      <td>
+            <%= yield %>
+      </td>
+    </tr>
+</table>
 
-<%= yield %>
 
 </body>
 </html>
